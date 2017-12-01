@@ -1,6 +1,6 @@
 {
   "name": "react-simple-scroller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A very simple infinite scroller for React",
   "main": "index.js",
   "repository": {
@@ -28,5 +28,10 @@
     "babel-preset-react": "^6.24.1",
     "webpack-dev-server": "^2.9.5"
   },
-  "keywords": ["react", "infinite", "scroll", "container"]
+  "keywords": [
+    "react",
+    "infinite",
+    "scroll",
+    "container"
+  ]
 }
