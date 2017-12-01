@@ -16,6 +16,8 @@ have to do is to supply `hasMore` and `loadMore` and you are ready to go.
     npm start
 ```
 
+Then open your browser and navigate to `localhost:5000`
+
 ## Installation
 
 ```
