@@ -19,12 +19,10 @@ class App extends React.Component {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         this.setState({ loading: false });
-        if (Math.random() > 0) {
-          this.setState({
-            visible: this.state.visible + perPage
-          });
-          resolve('im happy');
-        } else reject('Una');
+        this.setState({
+          visible: this.state.visible + perPage
+        });
+        resolve('done');
       }, 200 + Math.random() * 800);
     });
   };
