@@ -12,9 +12,6 @@ class App extends React.Component {
     visible,
     show: true
   };
-  //   loadMore = () => {
-  //     this.setState({ visible: this.state.visible + perPage });
-  //   };
 
   loadMore = () => {
     console.log('loadmore called');
@@ -52,9 +49,6 @@ class App extends React.Component {
     const hasMore = visible < items.length;
     return (
       <div>
-        <button onClick={() => this.setState({ show: !this.state.show })}>
-          toggle element
-        </button>
         <div>items showing: {visible}</div>
         {this.state.show && (
           <div
@@ -74,7 +68,6 @@ class App extends React.Component {
               {items.slice(0, visible).map(it => (
                 <div
                   style={{
-                    padding: 4,
                     border: '1px solid red',
                     margin: 4,
                     height: it.height

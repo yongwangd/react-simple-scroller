@@ -3,6 +3,8 @@
 A very lightweight but extremely flexible container for scrollable list. All you
 have to do is to supply `hasMore` and `loadMore` and you are ready to go.
 
+![alt text](https://raw.githubusercontent.com/yongwangd/react-simple-scroller/master/demo.gif)
+
 ## Installation
 
 ```
