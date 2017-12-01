@@ -7,6 +7,15 @@ have to do is to supply `hasMore` and `loadMore` and you are ready to go.
 
 [Demo Source](https://github.com/yongwangd/react-simple-scroller/blob/master/test/index.js)
 
+## Run the example locally
+
+```
+    git clone https://github.com/yongwangd/react-simple-scroller
+    cd react-simple-scroller
+    npm install
+    npm start
+```
+
 ## Installation
 
 ```

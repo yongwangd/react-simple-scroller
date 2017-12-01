@@ -8,8 +8,7 @@
     "url": "git://github.com/yongwangd/react-simple-scroller.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server"
+    "start": "webpack-dev-server"
   },
   "author": "Yong Wang <yongwangd@gmail.com>",
   "license": "MIT",
@@ -29,10 +28,5 @@
     "webpack": "^3.9.1",
     "webpack-dev-server": "^2.9.5"
   },
-  "keywords": [
-    "react",
-    "infinite",
-    "scroll",
-    "container"
-  ]
+  "keywords": ["react", "infinite", "scroll", "container"]
 }
