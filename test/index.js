@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as R from 'ramda';
-import Scroller from './Scroller';
+import Scroller from '../dist/Scroller';
 
 const perPage = 3;
 const visible = 3;
@@ -18,7 +18,6 @@ class App extends React.Component {
     this.setState({ loading: true });
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        // console.log('resolved loadmore');
         this.setState({ loading: false });
         if (Math.random() > 0) {
           this.setState({
@@ -77,7 +76,7 @@ class App extends React.Component {
                   {it.id}
                 </div>
               ))}
-              {loading && <div>Loading...</div>}
+              {loading && <p>Loading...</p>}
             </Scroller>
           </div>
         )}
