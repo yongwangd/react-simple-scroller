@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as R from 'ramda';
 import Scroller from '../dist/Scroller';
 
 const perPage = 3;
 const visible = 3;
 
+const getNumbers = count => {
+  let array = [];
+  for (let i = 0; i < count; i++) {
+    array.push(i);
+  }
+  return array;
+};
+
 class App extends React.Component {
   state = {
-    items: R.range(1, 120).map(id => ({
-      id,
-      height: 10 + Math.random() * 10
-    })),
+    items: getNumbers(100),
     visible,
     show: true
   };
@@ -57,11 +61,11 @@ class App extends React.Component {
                   style={{
                     border: '1px solid red',
                     margin: 4,
-                    height: it.height
+                    padding: 2
                   }}
-                  key={it.id}
+                  key={it}
                 >
-                  {it.id}
+                  {it}
                 </div>
               ))}
               {loading && <p>Loading...</p>}
