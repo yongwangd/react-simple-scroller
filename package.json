@@ -1,5 +1,5 @@
 {
-  "name": "react-loadmore",
+  "name": "react-simple-scroller",
   "version": "1.0.0",
   "description": "A very simple infinite scroller for React",
   "main": "index.js",
@@ -14,15 +14,10 @@
   "author": "Yong Wang <yongwangd@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "jquery": "^3.2.1",
-    "path": "^0.12.7",
     "prop-types": "^15.6.0",
-    "ramda": "^0.25.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
-    "rxjs": "^5.5.2",
-    "webpack": "^3.8.1"
+    "rxjs": "^5.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
