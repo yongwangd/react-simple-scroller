@@ -5,6 +5,8 @@ have to do is to supply `hasMore` and `loadMore` and you are ready to go.
 
 ![alt text](https://raw.githubusercontent.com/yongwangd/react-simple-scroller/master/demo.gif)
 
+[Demo Source](https://github.com/yongwangd/react-simple-scroller/blob/master/test/index.js)
+
 ## Installation
 
 ```
@@ -21,7 +23,8 @@ yarn add react-simple-scroller
 import SimpleScroller from 'react-simple-scroller';
 ```
 
-### Window scroll events
+Parent node of `SimpleScroller` should have a `height`. It could be values like
+`300px` or `50vh` `SimpleScroller` should be the only child of its parent node
 
 ```js
 <div style={{height: 300}}>
