@@ -8,7 +8,10 @@ const visible = 3;
 
 class App extends React.Component {
   state = {
-    items: [],
+    items: R.range(1, 120).map(id => ({
+      id,
+      height: 10 + Math.random() * 10
+    })),
     visible,
     show: true
   };
@@ -23,22 +26,9 @@ class App extends React.Component {
           visible: this.state.visible + perPage
         });
         resolve('done');
-      }, 200 + Math.random() * 800);
+      }, 500);
     });
   };
-
-  componentDidMount() {
-    setTimeout(
-      () =>
-        this.setState({
-          items: R.range(1, 120).map(id => ({
-            id,
-            height: 10 + Math.random() * 10
-          }))
-        }),
-      1000
-    );
-  }
 
   render() {
     const { items, visible, loading = false, show = true } = this.state;
